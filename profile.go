@@ -11,5 +11,5 @@ func (v Profile) Dating() bool {
 	gf := girlfriend.Profile{
 		Age: v.Age,
 	}
-	return !gf.Breakup() || gf.Makeup()
+	return !gf.Breakup()
 }
