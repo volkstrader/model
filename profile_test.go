@@ -9,10 +9,10 @@ import (
 func TestProfile_Dating(t *testing.T) {
 	a := Profile{
 		Name: gofakeit.Name(),
-		Age:  24,
+		Age:  25,
 	}
 
 	assert.True(t, a.Dating())
-	a.Age = 25
+	a.Age = 26
 	assert.False(t, a.Dating())
 }
